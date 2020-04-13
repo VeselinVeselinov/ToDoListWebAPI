@@ -1,0 +1,14 @@
+[
+	{
+		"Code": "NotifStatus1",
+		"Name": "Completed",
+		"Description": "Shows that a notification has been completed.",
+		"Id": 1
+	},
+	{
+		"Code": "NotifStatus2",
+		"Name": "Pending",
+		"Description": "Shows that a notification is still pending to execute.",
+		"Id": 2
+	}
+]

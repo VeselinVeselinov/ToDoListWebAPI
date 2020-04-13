@@ -1,0 +1,20 @@
+[
+	{
+		"Code": "AlrtStat1",
+		"Name": "FirstAlertStatus",
+		"Description": "The first alert status test in the system.",
+		"Id": 1
+	},
+	{
+		"Code": "AlrtStat2",
+		"Name": "SecondAlertStatus",
+		"Description": "The second alert status test in the system.",
+		"Id":2
+	},
+	{
+		"Code": "AlrtStat3",
+		"Name": "ThirdAlertStatus",
+		"Description": "The third alert status test in the system.",
+		"Id": 3
+	}
+]

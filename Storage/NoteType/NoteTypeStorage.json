@@ -1,0 +1,20 @@
+[
+	{
+		"Code": "Type1",
+		"Name": "ImageNote",
+		"Description": "Note with images.",
+		"Id": 1
+	},
+	{
+		"Code": "Type2",
+		"Name": "TextOnlyNote",
+		"Description": "Note with plain text only.",
+		"Id": 2
+	},
+	{
+		"Code": "Type3",
+		"Name": "TaskNote",
+		"Description": "Note with taks that can be checked when they are completed.",
+		"Id": 3
+	}
+]

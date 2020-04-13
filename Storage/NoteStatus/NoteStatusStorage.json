@@ -1,0 +1,20 @@
+[
+	{
+		"Code": "NoteStat1",
+		"Name": "FirstNoteSts",
+		"Description": "The first note status test in the system.",
+		"Id": 1
+	},
+	{
+		"Code": "NoteStat2",
+		"Name": "Active",
+		"Description": "The second note status test in the system.",
+		"Id": 2
+	},
+	{
+		"Code": "NoteStat3",
+		"Name": "NonActive",
+		"Description": "The third note status test in the system.",
+		"Id": 3
+	}
+]

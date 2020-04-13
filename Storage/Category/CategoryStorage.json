@@ -1,0 +1,20 @@
+[
+	{
+		"Code": "FavCat",
+		"Name": "Favourite",
+		"Description": "The favourite category in the system.",
+		"Id": 1
+	},
+	{
+		"Code": "LaterCat",
+		"Name": "ForLater",
+		"Description": "The for later category in the system.",
+		"Id": 2
+	},
+	{
+		"Code": "SecretCat",
+		"Name": "Secret",
+		"Description": "The secret category the system.",
+		"Id": 3
+	}
+]

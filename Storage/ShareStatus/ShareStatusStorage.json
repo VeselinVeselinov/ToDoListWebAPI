@@ -1,0 +1,20 @@
+[
+	{
+		"Code": "ShareStatus1",
+		"Name": "Completed",
+		"Description": "The share has executed successfully.",
+		"Id": 1
+	},
+	{
+		"Code": "ShareStatus2",
+		"Name": "Pending",
+		"Description": "The share is pending to be accepted.",
+		"Id": 2
+	},
+	{
+		"Code": "ShareStatus3",
+		"Name": "InTheProcess",
+		"Description": "The share is in process.",
+		"Id": 3
+	}
+]

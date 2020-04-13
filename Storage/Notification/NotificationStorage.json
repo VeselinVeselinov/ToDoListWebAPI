@@ -1,0 +1,166 @@
+[
+	{
+		"Alert": {
+    "Note": {
+      "Color": "Green",
+      "Account": {
+        "FirstName": "Account",
+        "LastName": "The First",
+        "Address": "Drujba 1 - Plovdiv",
+        "Phone": "+35912345687",
+        "Email": "test1@abv.bg",
+        "User": {
+          "UserName": "Firster",
+          "Password": "hardpassword1",
+          "Status": {
+            "Code": "UsrStat1",
+            "Name": "FirsterSts",
+            "Description": "The first user status test in the system.",
+            "Id": 1
+          },
+          "Id": 1
+        },
+        "Status": {
+          "Code": "FirstAccStatus",
+          "Name": "Active",
+          "Description": "The first acount status test in the system.",
+          "Id": 1
+        },
+        "Code": "FirstAcc",
+        "Name": "First account",
+        "Description": "This is the first test account in the system",
+        "Id": 1
+      },
+      "Category": {
+        "Code": "FavCat",
+        "Name": "Favourite",
+        "Description": "The favourite category in the system.",
+        "Id": 1
+      },
+      "Status": {
+        "Code": "NoteStat1",
+        "Name": "FirstNoteSts",
+        "Description": "The first note status test in the system.",
+        "Id": 1
+      },
+      "TextSize": 12,
+      "Url": "https://support.rebrandly.com/hc/article_attachments/360020801793/rebrandly_url_shortener_010.png",
+      "Text": "I am trying to test the system.",
+      "Type": {
+        "Code": "Type1",
+        "Name": "ImageNote",
+        "Description": "Note with images.",
+        "Id": 1
+      },
+      "Code": "test",
+      "Name": "test",
+      "Description": "test",
+      "Id": 1
+    },
+    "TimeReminder": "2019-12-12T15:53:23.9228215+02:00",
+			"Status": {
+				"Code": "AlrtStat1",
+				"Name": "FirstAlertStatus",
+				"Description": "The first alert status test in the system.",
+				"Id": 1
+			},
+    "Code": "AlrtTest1",
+    "Name": "Alrt1",
+    "Description": "This is a test alert.",
+    "Id": 1
+  },
+		"NotificationMessage": "You have been notified that the time has come.",
+		"Status": {
+			"Code": "NotifStatus1",
+			"Name": "Completed",
+			"Description": "Shows that a notification has been completed.",
+			"Id": 1
+		},
+		"Code": "Notif1",
+		"Name": "FirstNotification",
+		"Description": "The first notification in the system - that simply notifies that the time has come.",
+		"Id": 1
+	},
+	{
+		"Alert": {
+    "Note": {
+      "Color": "Green",
+      "Account": {
+        "FirstName": "Account",
+        "LastName": "The First",
+        "Address": "Drujba 1 - Plovdiv",
+        "Phone": "+35912345687",
+        "Email": "test1@abv.bg",
+        "User": {
+          "UserName": "Firster",
+          "Password": "hardpassword1",
+          "Status": {
+            "Code": "UsrStat1",
+            "Name": "FirsterSts",
+            "Description": "The first user status test in the system.",
+            "Id": 1
+          },
+          "Id": 1
+        },
+        "Status": {
+          "Code": "FirstAccStatus",
+          "Name": "Active",
+          "Description": "The first acount status test in the system.",
+          "Id": 1
+        },
+        "Code": "FirstAcc",
+        "Name": "First account",
+        "Description": "This is the first test account in the system",
+        "Id": 1
+      },
+      "Category": {
+        "Code": "LaterCat",
+        "Name": "ForLater",
+        "Description": "The for later category in the system.",
+        "Id": 2
+      },
+      "Status": {
+        "Code": "NoteStat2",
+        "Name": "Active",
+        "Description": "The second note status test in the system.",
+        "Id": 2
+      },
+      "TextSize": 12,
+      "Url": null,
+      "Text": "I am trying to test the system.",
+      "Type": {
+        "Code": "Type2",
+        "Name": "TextOnlyNote",
+        "Description": "Note with plain text only.",
+        "Id": 2
+      },
+      "Code": "test2",
+      "Name": "test2",
+      "Description": "This is the second test note in the system.",
+      "Id": 2
+    },
+    "TimeReminder": "2019-12-12T15:54:37.9457889+02:00",
+			"Status": {
+				"Code": "AlrtStat2",
+				"Name": "SecondAlertStatus",
+				"Description": "The second alert status test in the system.",
+				"Id": 2
+			},
+    "Code": "AlrtTest2",
+    "Name": "Alrt2",
+    "Description": "This is a test alert.",
+    "Id": 2
+  },
+		"NotificationMessage": "You have been notified that the time has come.",
+		"Status": {
+			"Code": "NotifStatus2",
+			"Name": "Pending",
+			"Description": "Shows that a notification is still pending to execute.",
+			"Id": 2
+		},
+		"Code": "Notif2",
+		"Name": "SecondNotification",
+		"Description": "The second notification in the system - that simply notifies that the you should leave for the event.",
+		"Id": 2
+	}
+]

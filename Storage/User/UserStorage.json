@@ -1,0 +1,35 @@
+[
+	{
+		"UserName": "Firster",
+		"Password": "hardpassword1",
+		"Status": {
+			"Code": "UsrStat1",
+			"Name": "FirsterSts",
+			"Description": "The first user status test in the system.",
+			"Id": 1
+		},
+		"Id": 1
+	},
+	{
+		"UserName": "Seconder",
+		"Password": "hardpassword2",
+		"Status": {
+			"Code": "UsrStat2",
+			"Name": "SeconderSts",
+			"Description": "The second user status test in the system.",
+			"Id": 2
+		},
+		"Id": 2
+	},
+	{
+		"UserName": "Thirder",
+		"Password": "hardpassword3",
+		"Status": {
+			"Code": "UsrStat3",
+			"Name": "ThirderSts",
+			"Description": "The third user status test in the system.",
+			"Id": 3
+		},
+		"Id": 3
+	}
+]

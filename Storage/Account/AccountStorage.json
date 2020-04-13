@@ -1,0 +1,188 @@
+[
+  {
+    "FirstName": "Account",
+    "LastName": "The First",
+    "Address": "Drujba 1 - Plovdiv",
+    "Phone": "+35912345687",
+    "Email": "test1@abv.bg",
+    "User": {
+      "UserName": "Firster",
+      "Password": "hardpassword1",
+      "Status": {
+        "Code": "UsrStat1",
+        "Name": "FirsterSts",
+        "Description": "The first user status test in the system.",
+        "Id": 1
+      },
+      "StatusId": 0,
+      "Id": 1
+    },
+    "UserId": 0,
+    "Status": {
+      "Code": "FirstAccStatus",
+      "Name": "Active",
+      "Description": "The first acount status test in the system.",
+      "Id": 1
+    },
+    "StatusId": 0,
+    "Code": "FirstAcc",
+    "Name": "First account",
+    "Description": "This is the first test account in the system",
+    "Id": 1
+  },
+  {
+    "FirstName": "Account",
+    "LastName": "The Second",
+    "Address": "Drujba 1 - Plovdiv",
+    "Phone": "+35966345687",
+    "Email": "test2@abv.bg",
+    "User": {
+      "UserName": "Seconder",
+      "Password": "hardpassword2",
+      "Status": {
+        "Code": "UsrStat2",
+        "Name": "SeconderSts",
+        "Description": "The second user status test in the system.",
+        "Id": 2
+      },
+      "StatusId": 0,
+      "Id": 2
+    },
+    "UserId": 0,
+    "Status": {
+      "Code": "SecondAccStatus",
+      "Name": "Active",
+      "Description": "The second acount status test in the system.",
+      "Id": 2
+    },
+    "StatusId": 0,
+    "Code": "SecondAcc",
+    "Name": "Second account",
+    "Description": "This is the second test account in the system",
+    "Id": 2
+  },
+  {
+    "FirstName": "Account",
+    "LastName": "The Third",
+    "Address": "Drujba 1 - Plovdiv",
+    "Phone": "+35916975687",
+    "Email": "test3@abv.bg",
+    "User": {
+      "UserName": "Thirder",
+      "Password": "hardpassword3",
+      "Status": {
+        "Code": "UsrStat3",
+        "Name": "ThirderSts",
+        "Description": "The third user status test in the system.",
+        "Id": 3
+      },
+      "StatusId": 0,
+      "Id": 3
+    },
+    "UserId": 0,
+    "Status": {
+      "Code": "ThirdAccStatus",
+      "Name": "Active",
+      "Description": "The third acount status test in the system.",
+      "Id": 3
+    },
+    "StatusId": 0,
+    "Code": "ThirdAcc",
+    "Name": "Third account",
+    "Description": "This is the third test account in the system",
+    "Id": 3
+  },
+  {
+    "FirstName": "Koko",
+    "LastName": "Kokov",
+    "Address": "Anonymous",
+    "Phone": "+359874225648",
+    "Email": "random@abv.bg",
+    "User": {
+      "UserName": "Thirder",
+      "Password": "hardpassword3",
+      "Status": {
+        "Code": "UsrStat3",
+        "Name": "ThirderSts",
+        "Description": "The third user status test in the system.",
+        "Id": 3
+      },
+      "StatusId": 0,
+      "Id": 3
+    },
+    "UserId": 0,
+    "Status": {
+      "Code": "ThirdAccStatus",
+      "Name": "Active",
+      "Description": "The third acount status test in the system.",
+      "Id": 3
+    },
+    "StatusId": 0,
+    "Code": "15",
+    "Name": "Koko",
+    "Description": "Student account for me.",
+    "Id": 4
+  },
+  {
+    "FirstName": "Tester",
+    "LastName": "For param conv",
+    "Address": null,
+    "Phone": null,
+    "Email": null,
+    "User": {
+      "UserName": "Firster",
+      "Password": "hardpassword1",
+      "Status": {
+        "Code": "UsrStat1",
+        "Name": "FirsterSts",
+        "Description": "The first user status test in the system.",
+        "Id": 1
+      },
+      "StatusId": 0,
+      "Id": 1
+    },
+    "UserId": 0,
+    "Status": {
+      "Code": "FirstAccStatus",
+      "Name": "Active",
+      "Description": "The first acount status test in the system.",
+      "Id": 1
+    },
+    "StatusId": 0,
+    "Code": "random",
+    "Name": "ThisIsATest",
+    "Description": "Testing for missing properties.",
+    "Id": 6
+  },
+  {
+    "FirstName": "Petur",
+    "LastName": "Pecov",
+    "Address": "Anonymous",
+    "Phone": "+359874225648",
+    "Email": "random@abv.bg",
+    "User": {
+      "UserName": "Firster",
+      "Password": "hardpassword1",
+      "Status": {
+        "Code": "UsrStat1",
+        "Name": "FirsterSts",
+        "Description": "The first user status test in the system.",
+        "Id": 1
+      },
+      "StatusId": 0,
+      "Id": 1
+    },
+    "UserId": 1,
+    "Status": {
+      "Code": "FirstAccStatus",
+      "Name": "Active",
+      "Description": "The first acount status test in the system.",
+      "Id": 1
+    },
+    "StatusId": 1,
+    "Code": "15",
+    "Name": "Pecata",
+    "Description": "Student account for me.",
+    "Id": 13
+  }
+]

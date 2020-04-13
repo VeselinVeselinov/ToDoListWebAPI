@@ -1,0 +1,32 @@
+[
+  {
+    "Code": "UsrGrp1",
+    "Name": "PendingTest",
+    "Description": "The group is pending a test at the moment. ",
+    "Id": 1
+  },
+  {
+    "Code": "UsrGrp2",
+    "Name": "Authorized",
+    "Description": "The group is authorized. ",
+    "Id": 2
+  },
+  {
+    "Code": "UsrGrp3",
+    "Name": "Away",
+    "Description": "The group is away from keyboard. ",
+    "Id": 3
+  },
+  {
+    "Code": "UsrGrp4",
+    "Name": "Intial",
+    "Description": "The group is from the default initial seeded entites in the sytem. ",
+    "Id": 4
+  },
+  {
+    "Code": "UsrGrp5",
+    "Name": "Banned",
+    "Description": "The group banned. ",
+    "Id": 5
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "Code": "FirstAccStatus",
+    "Name": "Active",
+    "Description": "The first acount status test in the system.",
+    "Id": 1
+  },
+  {
+    "Code": "SecondAccStatus",
+    "Name": "Active",
+    "Description": "The second acount status test in the system.",
+    "Id": 2
+  },
+  {
+    "Code": "ThirdAccStatus",
+    "Name": "Active",
+    "Description": "The third acount status test in the system.",
+    "Id": 3
+  },
+  {
+    "Code": "FourthAccStatus",
+    "Name": "Active",
+    "Description": "The fourth acount status test in the system.",
+    "Id": 4
+  },
+  {
+    "Code": "FifthAccStatus",
+    "Name": "Active",
+    "Description": "The fifth acount status test in the system.",
+    "Id": 5
+  }
+]

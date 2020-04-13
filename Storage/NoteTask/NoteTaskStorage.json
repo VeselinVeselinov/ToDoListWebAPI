@@ -1,0 +1,191 @@
+[
+	{
+		"IsChecked": false,
+		"Text": "Completed all the current internship tasks.",
+		"Code": "NTask1",
+		"Name": "Work",
+		"Description": "The first note task test in the system.",
+		"Id": 1,
+		"Note": {
+			"Account": {
+				"FirstName": "Account",
+				"LastName": "The First",
+				"Address": "Drujba 1 - Plovdiv",
+				"Phone": "+35912345687",
+				"Email": "test1@abv.bg",
+				"User": {
+					"UserName": "Firster",
+					"Password": "hardpassword1",
+					"Status": {
+						"Code": "UsrStat1",
+						"Name": "FirsterSts",
+						"Description": "The first user status test in the system.",
+						"Id": 1
+					},
+					"Id": 1
+				},
+				"Status": {
+					"Code": "FirstAccStatus",
+					"Name": "Active",
+					"Description": "The first acount status test in the system.",
+					"Id": 1
+				},
+				"Code": "FirstAcc",
+				"Name": "First account",
+				"Description": "This is the first test account in the system",
+				"Id": 1
+			},
+			"Category": {
+				"Code": "FavCat",
+				"Name": "Favourite",
+				"Description": "The favourite category in the system.",
+				"Id": 1
+			},
+			"Status": {
+				"Code": "NoteStat1",
+				"Name": "FirstNoteSts",
+				"Description": "The first note status test in the system.",
+				"Id": 1
+			},
+			"TextSize": 12,
+			"Url": "https://support.rebrandly.com/hc/article_attachments/360020801793/rebrandly_url_shortener_010.png",
+			"Text": "I am trying to test the system.",
+			"Type": {
+				"Code": "Type1",
+				"Name": "ImageNote",
+				"Description": "Note with images.",
+				"Id": 1
+			},
+			"Code": "test",
+			"Name": "test",
+			"Description": "test",
+			"Id": 1
+		}
+	},
+	{
+		"IsChecked": true,
+		"Text": "Completed all the home chore tasks.",
+		"Code": "NTask2",
+		"Name": "Home",
+		"Description": "The second note task test in the system.",
+		"Id": 2,
+		"Note": {
+			"Account": {
+				"FirstName": "Account",
+				"LastName": "The First",
+				"Address": "Drujba 1 - Plovdiv",
+				"Phone": "+35912345687",
+				"Email": "test1@abv.bg",
+				"User": {
+					"UserName": "Firster",
+					"Password": "hardpassword1",
+					"Status": {
+						"Code": "UsrStat1",
+						"Name": "FirsterSts",
+						"Description": "The first user status test in the system.",
+						"Id": 1
+					},
+					"Id": 1
+				},
+				"Status": {
+					"Code": "FirstAccStatus",
+					"Name": "Active",
+					"Description": "The first acount status test in the system.",
+					"Id": 1
+				},
+				"Code": "FirstAcc",
+				"Name": "First account",
+				"Description": "This is the first test account in the system",
+				"Id": 1
+			},
+			"Category": {
+				"Code": "FavCat",
+				"Name": "Favourite",
+				"Description": "The favourite category in the system.",
+				"Id": 1
+			},
+			"Status": {
+				"Code": "NoteStat1",
+				"Name": "FirstNoteSts",
+				"Description": "The first note status test in the system.",
+				"Id": 1
+			},
+			"TextSize": 12,
+			"Url": "https://support.rebrandly.com/hc/article_attachments/360020801793/rebrandly_url_shortener_010.png",
+			"Text": "I am trying to test the system.",
+			"Type": {
+				"Code": "Type1",
+				"Name": "ImageNote",
+				"Description": "Note with images.",
+				"Id": 1
+			},
+			"Code": "test",
+			"Name": "test",
+			"Description": "test",
+			"Id": 1
+		}
+	},
+	{
+		"IsChecked": false,
+		"Text": "Completed all the test preparation exercises.",
+		"Code": "NTask3",
+		"Name": "Test",
+		"Description": "The third note task test in the system.",
+		"Id": 3,
+		"Note": {
+			"Account": {
+				"FirstName": "Account",
+				"LastName": "The First",
+				"Address": "Drujba 1 - Plovdiv",
+				"Phone": "+35912345687",
+				"Email": "test1@abv.bg",
+				"User": {
+					"UserName": "Firster",
+					"Password": "hardpassword1",
+					"Status": {
+						"Code": "UsrStat1",
+						"Name": "FirsterSts",
+						"Description": "The first user status test in the system.",
+						"Id": 1
+					},
+					"Id": 1
+				},
+				"Status": {
+					"Code": "FirstAccStatus",
+					"Name": "Active",
+					"Description": "The first acount status test in the system.",
+					"Id": 1
+				},
+				"Code": "FirstAcc",
+				"Name": "First account",
+				"Description": "This is the first test account in the system",
+				"Id": 1
+			},
+			"Category": {
+				"Code": "FavCat",
+				"Name": "Favourite",
+				"Description": "The favourite category in the system.",
+				"Id": 1
+			},
+			"Status": {
+				"Code": "NoteStat1",
+				"Name": "FirstNoteSts",
+				"Description": "The first note status test in the system.",
+				"Id": 1
+			},
+			"TextSize": 12,
+			"Url": "https://support.rebrandly.com/hc/article_attachments/360020801793/rebrandly_url_shortener_010.png",
+			"Text": "I am trying to test the system.",
+			"Type": {
+				"Code": "Type1",
+				"Name": "ImageNote",
+				"Description": "Note with images.",
+				"Id": 1
+			},
+			"Code": "test",
+			"Name": "test",
+			"Description": "test",
+			"Id": 1
+		}
+	}
+]

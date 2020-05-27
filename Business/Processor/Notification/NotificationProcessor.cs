@@ -19,7 +19,7 @@ namespace ToDoListWebAPI.Business.Processor.Notification
 			return entity.Id;
 		}
 
-		protected override void ValidateParametersSpecific(NotificationParam param)
+		protected override void ValidateParametersSpecific(NotificationParam param, long id)
 		{ }
 	}
 }

@@ -1,4 +1,6 @@
-﻿namespace ToDoListWebAPI.Data.Common.ApiSession
+﻿using System.Collections.Generic;
+
+namespace ToDoListWebAPI.Data.Common.ApiSession
 {
     public class ApiSession : PersistentNamed
     {

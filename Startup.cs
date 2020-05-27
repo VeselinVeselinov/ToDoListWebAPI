@@ -9,6 +9,8 @@ using ToDoListWebAPI.Extensions.Authentication;
 using Microsoft.Extensions.DependencyInjection;
 using ToDoListWebAPI.DataAccess.Dao.Common.Context;
 using ToDoListWebAPI.Authentication.Common.Hash.Config;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 
 namespace ToDoListWebAPI
 {
@@ -40,6 +42,8 @@ namespace ToDoListWebAPI
 
             services.RegisterSystemDependencies();
 
+            services.AddHttpContextAccessor();
+
             services.RegisterSwaggerConfiguration();
 
             services.AddCors(options =>
@@ -53,6 +57,20 @@ namespace ToDoListWebAPI
                         .AllowAnyHeader()
                         .AllowAnyMethod();
                 });
+            });
+
+            services.AddMvc(options =>
+            {
+                options.SslPort = 44321;
+                options.Filters.Add(new RequireHttpsAttribute());
+            });
+
+            services.AddAntiforgery(options =>
+            {
+                options.Cookie.Name = "_af";
+                options.Cookie.HttpOnly = true;
+                options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+                options.HeaderName = "X-XSRF-TOKEN";
             });
         }
 
@@ -73,7 +91,7 @@ namespace ToDoListWebAPI
 
             app.UseStaticFiles();
 
-            app.UseHttpsRedirection();
+            app.UseHttpsRedirection(); //-- for https redirections
 
             app.UseRouting();
 

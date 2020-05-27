@@ -19,7 +19,7 @@ namespace ToDoListWebAPI.Business.Processor.AlertStatus
 			return entity.Id;
 		}
 
-		protected override void ValidateParametersSpecific(AlertStatusParam param)
+		protected override void ValidateParametersSpecific(AlertStatusParam param, long id)
 		{ }
 	}
 }

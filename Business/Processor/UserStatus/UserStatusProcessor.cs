@@ -18,8 +18,5 @@ namespace ToDoListWebAPI.Business.Processor.UserStatus
 		{
 			return entity.Id;
 		}
-
-		protected override void ValidateParametersSpecific(UserStatusParam param)
-		{ }
 	}
 }

@@ -19,7 +19,7 @@ namespace ToDoListWebAPI.Business.Processor.AccountStatus
 			return entity.Id;
 		}
 
-		protected override void ValidateParametersSpecific(AccountStatusParam param)
+		protected override void ValidateParametersSpecific(AccountStatusParam param, long id)
 		{ }
 	}
 }

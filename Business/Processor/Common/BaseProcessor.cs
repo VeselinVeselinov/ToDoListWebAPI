@@ -3,17 +3,19 @@ using ToDoListWebAPI.Data.Common;
 using ToDoListWebAPI.DataAccess.Dao.Common;
 using ToDoListWebAPI.Business.Convertor.Common;
 using System.Linq;
+using System;
+using Microsoft.AspNetCore.Http;
 
 namespace ToDoListWebAPI.Business.Processor.Common
 {
 	public abstract class BaseProcessor<PK, TEntity, TParam, TResult, TParamConvertor, TResultConvertor, TDao> : 
 		IBaseProcessor<PK,TParam, TResult>
-		where TEntity:Persistent
-		where TParam:BaseParam
-		where TResult:BaseResult
-		where TParamConvertor:IBaseParamConverter<TParam, TEntity>
-		where TResultConvertor:IBaseResultConverter<TEntity, TResult>
-		where TDao:IBaseDao<PK, TEntity>
+		where TEntity : Persistent
+		where TParam : BaseParam
+		where TResult : BaseResult
+		where TParamConvertor : IBaseParamConverter<TParam, TEntity>
+		where TResultConvertor : IBaseResultConverter<TEntity, TResult>
+		where TDao : IBaseDao<PK, TEntity>
 	{
 		private TParamConvertor _paramConvertor;
 
@@ -49,7 +51,7 @@ namespace ToDoListWebAPI.Business.Processor.Common
 		public TResult Create(TParam param)
 		{
 			ValidateParametersStandart(param);
-			ValidateParametersSpecific(param);
+			ValidateParametersSpecific(param, default); 
 
 			TEntity entity = ParamConverter.Convert(param,null);
 
@@ -83,6 +85,8 @@ namespace ToDoListWebAPI.Business.Processor.Common
 
 		public void Delete(PK id)
 		{
+			ValidateParametersSpecific(null, id);
+
 			Dao.Delete(id);
 		}
 
@@ -122,9 +126,11 @@ namespace ToDoListWebAPI.Business.Processor.Common
 
 		public void Update(PK id, TParam param)
 		{
-			TEntity oldEntity = Dao.Find(id);
-			TEntity newEntity = ParamConverter.Convert(param,oldEntity);
+			ValidateParametersSpecific(param, id);
 
+			TEntity oldEntity = Dao.Find(id);
+			TEntity newEntity = ParamConverter.Convert(param, oldEntity);
+			
 			Dao.Update(newEntity);
 		}
 
@@ -168,9 +174,9 @@ namespace ToDoListWebAPI.Business.Processor.Common
 
 		public void ValidateParameters(List<TParam> param) { }
 
-		protected abstract void ValidateParametersSpecific(TParam param);
+		protected virtual void ValidateParametersSpecific(TParam param, PK id) { }
 
-		private List<TResult> CheckIfActive(List<TResult> results)
+		public List<TResult> CheckIfActive(List<TResult> results)
 		{
 			List<TResult> filteredResult = new List<TResult>();
 			foreach (var result in results)

@@ -27,7 +27,7 @@ namespace ToDoListWebAPI.Business.Processor.ApiSession
             return entity.Id;
         }
 
-        protected override void ValidateParametersSpecific(ApiSessionParam param)
+        protected override void ValidateParametersSpecific(ApiSessionParam param, long id)
         { }
     }
 }

@@ -19,7 +19,7 @@ namespace ToDoListWebAPI.Business.Processor.NoteTask
 			return entity.Id;
 		}
 
-		protected override void ValidateParametersSpecific(NoteTaskParam param)
+		protected override void ValidateParametersSpecific(NoteTaskParam param, long id)
 		{ }
 	}
 }

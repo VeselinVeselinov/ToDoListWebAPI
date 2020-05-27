@@ -11,7 +11,7 @@ namespace ToDoListWebAPI.Extensions.NoteTask
         public static void RegisterNoteTaskDependencies(this IServiceCollection services)
         {
             services.AddScoped<INoteTaskData, NoteTaskData>();
-            services.AddScoped<INoteTaskDao, NoteTaskDaoFile>();
+            services.AddScoped<INoteTaskDao, NoteTaskDaoEF>();
             services.AddScoped<INoteTaskResultConverter, NoteTaskResultConverter>();
             services.AddScoped<INoteTaskParamConverter, NoteTaskParamConverter>();
             services.AddScoped<INoteTaskProcessor, NoteTaskProcessor>();

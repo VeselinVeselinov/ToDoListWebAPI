@@ -41,7 +41,12 @@ namespace ToDoListWebAPI.Business.Convertor.User
 
 		public override void ConvertSpecific(UserParam param, Data.Entity.User entity)
 		{
-			param.Password = HashPassword(param.Password);
+			if (param.Password == "********")
+			{
+				param.Password = entity.Password;
+			}
+			else param.Password = HashPassword(param.Password);
+
 			entity.Status = StatusDao.Find(param.StatusId);
 		}
 

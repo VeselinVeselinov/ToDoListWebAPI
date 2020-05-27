@@ -4,9 +4,9 @@ using ToDoListWebAPI.Business.Processor.Account;
 
 namespace ToDoListWebAPI.Controllers.Account
 {
-    public class AccountService : BaseController<long, AccountParam, AccountResult, IAccountProcessor>
+    public class AccountController : BaseController<long, AccountParam, AccountResult, IAccountProcessor>
     {
-        public AccountService(IAccountProcessor processor) : base(processor)
+        public AccountController(IAccountProcessor processor) : base(processor)
         {
         }
     }

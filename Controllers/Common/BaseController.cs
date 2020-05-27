@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
 using ToDoListWebAPI.Business.Convertor.Common;
 using ToDoListWebAPI.Business.Processor.Common;
+using Microsoft.EntityFrameworkCore;
 
 namespace ToDoListWebAPI.Controllers.Common
 {
@@ -43,7 +44,7 @@ namespace ToDoListWebAPI.Controllers.Common
         {
             if (param == null)
             {
-                return BadRequest();
+                return BadRequest("Input data can not be empty. ");
             }
 
             try
@@ -56,9 +57,9 @@ namespace ToDoListWebAPI.Controllers.Common
             {
                 return BadRequest(ex.Message);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return BadRequest(ex.Message);
+                return BadRequest("Unfortunately something went terribly wrong. ");
             }
         }
 
@@ -76,7 +77,7 @@ namespace ToDoListWebAPI.Controllers.Common
         {
             if (param == null)
             {
-                return BadRequest();
+                return BadRequest("Input data can not be empty. ");
             }
 
             try
@@ -87,7 +88,7 @@ namespace ToDoListWebAPI.Controllers.Common
             }
             catch (Exception)
             {
-                return BadRequest();
+                return BadRequest("Unfortunately something went terribly wrong. ");
             }
         }
 
@@ -107,7 +108,7 @@ namespace ToDoListWebAPI.Controllers.Common
         {
             if (id == null)
             {
-                return BadRequest();
+                return BadRequest("Input data can not be empty. ");
             }
 
             try
@@ -116,13 +117,13 @@ namespace ToDoListWebAPI.Controllers.Common
 
                 return Ok($"Entity with id:{id} was successfully erased from the system. ");
             }
-            catch (KeyNotFoundException)
+            catch (KeyNotFoundException ex)
             {
-                return NotFound();
+                return NotFound(ex.Message);
             }
             catch (Exception)
             {
-                return BadRequest();
+                return BadRequest("Unfortunately something went terribly wrong. ");
             }
         }
 
@@ -142,7 +143,7 @@ namespace ToDoListWebAPI.Controllers.Common
         {
             if (idList.Count == 0)
             {
-                return BadRequest();
+                return BadRequest("Input data can not be empty. ");
             }
 
             try
@@ -155,13 +156,13 @@ namespace ToDoListWebAPI.Controllers.Common
 
                 return Ok($"Entities with ids: {erasedIds} were successfully erased from the system. ");
             }
-            catch(KeyNotFoundException)
+            catch(KeyNotFoundException ex)
             {
-                return NotFound();
+                return NotFound(ex.Message);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                return Ok(e.InnerException.Message);
+                return BadRequest("Unfortunately something went terribly wrong. ");
             }
         }
 
@@ -181,7 +182,7 @@ namespace ToDoListWebAPI.Controllers.Common
         {
             if (id == null)
             {
-                return BadRequest();
+                return BadRequest("Input data can not be empty. ");
             }
 
             try
@@ -190,13 +191,17 @@ namespace ToDoListWebAPI.Controllers.Common
 
                 return Ok($"Entity with id:{id} has been set to inactive. ");
             }
-            catch (KeyNotFoundException)
+            catch (KeyNotFoundException ex)
             {
-                return NotFound();
+                return NotFound(ex.Message);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
             }
             catch (Exception)
             {
-                return BadRequest();
+                return BadRequest("Unfortunately something went terribly wrong. ");
             }
         }
 
@@ -216,7 +221,7 @@ namespace ToDoListWebAPI.Controllers.Common
         {
             if (idList.Count == 0)
             {
-                return BadRequest();
+                return BadRequest("Input data can not be empty. ");
             }
 
             try
@@ -229,13 +234,13 @@ namespace ToDoListWebAPI.Controllers.Common
 
                 return Ok($"Entities with ids:{deletedIds} have been set to inactive. ");
             }
-            catch (KeyNotFoundException)
+            catch (KeyNotFoundException ex)
             {
-                return NotFound();
+                return NotFound(ex.Message);
             }
             catch (Exception)
             {
-                return BadRequest();
+                return BadRequest("Unfortunately something went terribly wrong. ");
             }
         }
 
@@ -256,7 +261,7 @@ namespace ToDoListWebAPI.Controllers.Common
         {
             if (fieldName == null)
             {
-                return BadRequest();
+                return BadRequest("Input data can not be empty. ");
             }
 
             try
@@ -267,7 +272,7 @@ namespace ToDoListWebAPI.Controllers.Common
             }
             catch (Exception)
             {
-                return BadRequest();
+                return BadRequest("Unfortunately something went terribly wrong. ");
             }
         }
 
@@ -287,7 +292,7 @@ namespace ToDoListWebAPI.Controllers.Common
         {
             if (id == null)
             {
-                return BadRequest();
+                return BadRequest("Input data can not be empty. ");
             }
 
             try
@@ -296,13 +301,13 @@ namespace ToDoListWebAPI.Controllers.Common
 
                 return Ok(result);
             }
-            catch (KeyNotFoundException)
+            catch (KeyNotFoundException ex)
             {
-                return NotFound();
+                return NotFound(ex.Message);
             }
             catch (Exception)
             {
-                return BadRequest();
+                return BadRequest("Unfortunately something went terribly wrong. ");
             }
         }
 
@@ -315,7 +320,7 @@ namespace ToDoListWebAPI.Controllers.Common
         [HttpGet("ListAll")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [Microsoft.AspNetCore.Authorization.Authorize(Roles = "Administrator")]
+        //[Microsoft.AspNetCore.Authorization.Authorize(Roles = "Administrator")]
         public IActionResult ListAll()
         {
             try
@@ -326,7 +331,7 @@ namespace ToDoListWebAPI.Controllers.Common
             }
             catch (Exception)
             {
-                return BadRequest();
+                return BadRequest("Unfortunately something went terribly wrong. ");
             }
         }
 
@@ -347,7 +352,7 @@ namespace ToDoListWebAPI.Controllers.Common
         {
             if (id == null || param == null)
             {
-                return BadRequest();
+                return BadRequest("Input cannot be empty. ");
             }
 
             try
@@ -356,9 +361,9 @@ namespace ToDoListWebAPI.Controllers.Common
 
                 return Ok($"Entity with id: {id} has been successfully updated. ");
             }
-            catch(KeyNotFoundException)
+            catch(KeyNotFoundException ex)
             {
-                return NotFound();
+                return NotFound(ex.Message);
             }
             catch (ArgumentException ex)
             {
@@ -366,7 +371,7 @@ namespace ToDoListWebAPI.Controllers.Common
             }
             catch (Exception)
             {
-                return BadRequest();
+                return BadRequest("Unfortunately something went terribly wrong. ");
             }
         }
 
@@ -386,7 +391,7 @@ namespace ToDoListWebAPI.Controllers.Common
         {
             if (param == null)
             {
-                return BadRequest();
+                return BadRequest("Input data can not be empty. ");
             }
 
             try
@@ -399,13 +404,13 @@ namespace ToDoListWebAPI.Controllers.Common
 
                 return Ok($"Entities with ids: {updatedIds} were successfully updated. ");
             }
-            catch (KeyNotFoundException)
+            catch (KeyNotFoundException ex)
             {
-                return NotFound();
+                return NotFound(ex.Message);
             }
             catch (Exception)
             {
-                return BadRequest();
+                return BadRequest("Unfortunately something went terribly wrong. ");
             }
         }
     }

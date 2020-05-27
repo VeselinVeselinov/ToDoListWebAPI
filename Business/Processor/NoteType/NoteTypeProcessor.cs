@@ -19,7 +19,7 @@ namespace ToDoListWebAPI.Business.Processor.NoteType
 			return entity.Id;
 		}
 
-		protected override void ValidateParametersSpecific(NoteTypeParam param)
+		protected override void ValidateParametersSpecific(NoteTypeParam param, long id)
 		{ }
 	}
 }

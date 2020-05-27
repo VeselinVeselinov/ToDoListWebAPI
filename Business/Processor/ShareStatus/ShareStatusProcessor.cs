@@ -19,7 +19,7 @@ namespace ToDoListWebAPI.Business.Processor.ShareStatus
 			return entity.Id;
 		}
 
-		protected override void ValidateParametersSpecific(ShareStatusParam param)
+		protected override void ValidateParametersSpecific(ShareStatusParam param, long id)
 		{ }
 	}
 }

@@ -19,7 +19,7 @@ namespace ToDoListWebAPI.Business.Processor.UserGroupStatus
             return entity.Id;
         }
 
-        protected override void ValidateParametersSpecific(UserGroupStatusParam param)
+        protected override void ValidateParametersSpecific(UserGroupStatusParam param, long id)
         { }
     }
 }

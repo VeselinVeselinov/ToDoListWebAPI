@@ -46,38 +46,6 @@ namespace ToDoListWebAPI.Controllers.Authentication
             }  
         }
 
-        //[HttpGet("ValidateUsername/{username}")]
-        //[AllowAnonymous]
-        //public IActionResult ValidateUsername(string username)
-        //{
-        //    try
-        //    {
-        //        bool isValid = AuthProcessor.ValidateUsername(username);
-
-        //        return Ok(isValid);
-        //    }
-        //    catch (Exception)
-        //    {
-        //        return BadRequest();
-        //    }
-        //}
-
-        //[HttpGet("ValidateEmail/{email}")]
-        //[AllowAnonymous]
-        //public IActionResult ValidateEmail(string email)
-        //{
-        //    try
-        //    {
-        //        bool isValid = AuthProcessor.ValidateEmail(email);
-
-        //        return Ok(isValid);
-        //    }
-        //    catch (Exception)
-        //    {
-        //        return BadRequest();
-        //    }
-        //}
-
         /// <summary>
         /// Logs a user in the system by creating him a session and generating an authToken. 
         /// </summary>

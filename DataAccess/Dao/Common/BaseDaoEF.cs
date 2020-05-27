@@ -43,7 +43,7 @@ namespace ToDoListWebAPI.DataAccess.Dao.Common
 
 			if (entity == null)
 			{
-				throw new KeyNotFoundException();
+				throw new KeyNotFoundException("The element doesn't seem to be found anywhere in the system.");
 			}
 
 			return entity;
@@ -69,8 +69,8 @@ namespace ToDoListWebAPI.DataAccess.Dao.Common
 			return Entities.ToList().Where(
 				entity => entity.GetType()
 					.GetProperty(fieldName).GetValue(entity).ToString()
-					.Equals(value, StringComparison.OrdinalIgnoreCase)
-					).ToList();
+					.Equals(value, StringComparison.OrdinalIgnoreCase))
+					.ToList();
 		}
 
 		public TEntity Save(TEntity entity)

@@ -19,7 +19,7 @@ namespace ToDoListWebAPI.Business.Processor.NoteStatus
 			return entity.Id;
 		}
 
-		protected override void ValidateParametersSpecific(NoteStatusParam param)
+		protected override void ValidateParametersSpecific(NoteStatusParam param, long id)
 		{ }
 	}
 }

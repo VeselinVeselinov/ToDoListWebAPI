@@ -6,6 +6,7 @@ namespace ToDoListWebAPI.Business.Convertor.User
     {
 		public override void ConvertSpecific(Data.Entity.User entity, UserResult result)
 		{
+			result.Password = "This is a well kept secret. ;)";
 			result.StatusId = entity.Status.Id;
 			result.StatusName = entity.Status.Name;
 		}

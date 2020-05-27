@@ -19,7 +19,7 @@ namespace ToDoListWebAPI.Business.Processor.Category
 			return entity.Id;
 		}
 
-		protected override void ValidateParametersSpecific(CategoryParam param)
+		protected override void ValidateParametersSpecific(CategoryParam param, long id)
 		{ }
 	}
 }
